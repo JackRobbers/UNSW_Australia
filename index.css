@@ -7,3 +7,15 @@ form * {
     display: block;
     width: 100%;
 }
+
+.bronze {
+    color:#fbb683;
+}
+
+.silver {
+    color:#dadadc;
+}
+
+.gold {
+    color: #fddd85;
+}

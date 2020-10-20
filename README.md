@@ -14,3 +14,7 @@ this will work with chrome or chromium and possbily other chrome-based browsers.
 * Account for different medal tier rules
 * Support Tracks
 * Support Awards
+* Refresh single pages
+* Refresh replaces old results
+* Query strings?
+* Tests?
