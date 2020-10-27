@@ -22,19 +22,40 @@
     text-align: center;
 }
 
-.form-line select {
-    width: 300px;
-    height: 200px;
+.result-line {
+    display: flex;
+    align-content: center;
+}
+
+.result-line p, .result-line a {
+    display: inline-block;
+}
+
+.result-line span {
+    margin-top: 0.75em;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}
+
+.medal {
+    height: 1.5em;
+    width: 1.5em;
+    border-radius: 50%;
+    display: inline-block;
 }
 
 .bronze {
-    color:#fbb683;
+    background-color:#fbb683;
 }
 
 .silver {
-    color:#dadadc;
+    background-color:#dadadc;
 }
 
 .gold {
-    color: #fddd85;
+    background-color: #fddd85;
+}
+
+.award {
+    background-color: #1b6936;
 }
