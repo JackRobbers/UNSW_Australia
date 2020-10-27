@@ -3,6 +3,14 @@ form * {
     width: 100%;
 }
 
+.form-line {
+    display: flex;
+}
+
+.form-line button {
+    background-color: #F2E6F1;
+}
+
 .bronze {
     color:#fbb683;
 }
