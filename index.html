@@ -8,22 +8,44 @@
     </head>
 
     <body>
-        <h1>WikiMate</h1>
-        <form id="checker" action="">
-            <div class="form-line">
-                <input type="text" name="team" placeholder="Team Name">
-                <input type="number" name="year" placeholder="Year">
-                <button type="Submit">Check!</button>
-            </div>
-            <!-- <select name="track">
-                <option value="software">Software</option>
-            </select>
-            <select name="awards" multiple>
-                <option value="Best Wiki">Best Wiki</option>
-            </select> -->
-        </form>
-        <div id="results">
+        <div id="app">
+            <h1>WikiMate</h1>
+            <h2>Check Required URLs for iGEM Wikis</h2>
+            <h3>A page is considered to be present if it has non-default content and the "Delete this box in order to be evaluated for this medal criterion" box has been removed for pages that have that. If a page is present but has not been capitalised correctly that will also be detected.  </h3>
 
+            <p><i>Disclaimer: This is an automated tool and maybe contain bugs, always double check your pages manually. This tool has been written for the 2020 version of the competition and may not work for previous or future years.</i></p>
+            <p>Enter your team name (e.g UNSW_Australia), year and any awards you intend to contest. If an award is not listed, it does not have a required url.</p>
+            <form id="checker" action="">
+                <div class="form-line">
+                    <div>
+                        <label for="name">Team Name</label>
+                        <input id="name" type="text" name="team" placeholder="Team Name">
+                    </div>
+                    <div>
+                        <label for="year">Year</label>
+                        <input id="year" type="number" name="year" placeholder="Year" value="2020">
+                    </div>
+                </div>
+                <div class="form-line">
+                    <div id="awards">
+                        <label>Awards</label>
+
+                    </div>
+                </div>
+                <button id="submit" type="Submit">Check!</button>
+                <!-- <select name="track">
+                    <option value="software">Software</option>
+                </select>
+                <select name="awards" multiple>
+                    <option value="Best Wiki">Best Wiki</option>
+                </select> -->
+            </form>
+            <div id="required">
+
+            </div>
+            <div id="results">
+
+            </div>
         </div>
     </body>
 </html>
