@@ -170,11 +170,15 @@ function displayResults(event) {
   page = pages.filter((obj) => obj.name == page)[0];
 
   pageNotEdited = false;
-  for (message of defaultMessages) {
-      if (this.responseText.includes(message)) {
-          pageNotEdited = true;
-          break;
-      }
+
+  // hack to avoid triggering on /software on our wiki and reading our own source code
+  if (!this.responseText.includes("WikiMate")) {
+    for (message of defaultMessages) {
+        if (this.responseText.includes(message)) {
+            pageNotEdited = true;
+            break;
+        }
+    }
   }
   if (pageNotEdited) {
       p.innerText = "FAILURE: "
